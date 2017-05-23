@@ -58,7 +58,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void displayTaskDialog(){
-        final EditText taskText = new EditText(this); //input field for the dialog
+
+        //input field for the dialog
+        final EditText taskText = new EditText(this);
+        taskText.setPadding(10, 0, 10, 0);
 
         //dialog used to prompt user to enter their task
         new AlertDialog.Builder(this)
